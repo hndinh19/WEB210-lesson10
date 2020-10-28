@@ -1,0 +1,193 @@
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0px;
+}
+
+nav {
+    display: block
+}
+
+.navbar {
+    background-color: gray;
+    color: yellow;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.nav ul {
+    text-align: center;
+    list-style: none;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+.nav ul li {
+    font: bold 20px sans-serif;
+    display: inline-block;
+    position: relative;
+    padding: 15px 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+    color: yellow;
+    background-color: aqua;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: gray;
+    text-align: center;
+  }
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: red;
+}
+
+li a.active {
+    color: white;
+  }
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover, .projects:hover .dropbtn {
+    background-color: red;
+}
+
+li a:hover, .contact:hover .dropbtn {
+    background-color: red;
+}
+
+li.projects, li.contact {
+    display: inline-block;
+}
+  
+.projects-content, .contact-content {
+    display: none;
+    position: absolute;
+    background-color: lightgray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.projects-content a, .contact-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+  
+.projects:hover .projects-content {
+    display: block;
+}
+
+.contact:hover .contact-content {
+    display: block;
+}
+
+body {
+    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    
+}
+
+footer {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+div {
+    display: block;
+}
+
+h1 {
+    font-family: 'Allura';
+    font-size: 80px;
+    text-shadow: 2px 2px 5px red;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+h3 {
+    text-decoration: underline;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+#p1 {background-color:rgba(255,0,255,0.3);}
+
+div.static {
+    position: static;
+    left: 40px;
+    border: 3px solid #73AD;
+}
+
+section {
+    display: block;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, mimax(300px, 1fr));
+    grid-gap: 1rem;
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    flex-flow: row;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    flex-grow: inherit;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.car {
+    text-align: center;
+
+}
